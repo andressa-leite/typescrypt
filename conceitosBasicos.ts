@@ -169,6 +169,8 @@ function cumprimentar(name: string, greeting?: string) {
 cumprimentar("Andressa");
 cumprimentar("Andressa", "Miss");
 
+
+/**************************************************/
 //INTERFACES
 //Elas padronizam estruturas para a gente poder utilizar como tipo
 
@@ -197,6 +199,7 @@ const someNumbers: mathFunctionParams = {
 
 console.log(multiplyNumbers(someNumbers));
 
+/**************************************************/
 //NARROING
 //checagem de tipos
 //é a forma que a gente tem de garantir que um determinado tipo de dado chegue numa determinada linha de código
@@ -212,6 +215,7 @@ function doSomething(info: number | boolean) {
 doSomething(5);
 doSomething(true);
 
+/**************************************************/
 //GENERICS
 //aqui o tipo de dado não importa,
 //eu quero executar uma função que ela trabalhe com um determinado tipo de dado, mas ele pode ser qualquer um
@@ -232,6 +236,7 @@ showArraysItems(a2);
 
 //ou seja, podemos utilizar arrays de todos os tipos
 
+/**************************************************/
 //CLASSES
 class User {
   name;
@@ -262,6 +267,7 @@ zeca.showUserRole(false); //"Unable to show information"
 
 console.log(zeca);
 
+/**************************************************/
 //INTERFACES EM CLASSES
 //interfaces que ditam como as classes tem que se comportar
 //serve quando um projeto possui classes que são muito parecidas então a gente tem um padrão entre elas
@@ -289,6 +295,7 @@ class Car implements Ivehicle {
 const fusca = new Car("VW", 4);
 fusca.showBrand();
 
+/**************************************************/
 //HERANÇA
 //quando se herda algo de outra classe
 
@@ -307,6 +314,7 @@ console.log(a4);
 
 a4.showBrand();
 
+/**************************************************/
 //DECLARATORS
 //recurso especial do typescript
 //muito usado para validação de dados
